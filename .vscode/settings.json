@@ -1,0 +1,24 @@
+{
+    "eslint.validate": [
+        {
+            "language":"vue",
+            "autoFix": true
+        },
+        {
+            "language":"javascript",
+            "autoFix": true
+        },
+        {
+            "language":"javascriptreact",
+            "autoFix": true
+        },
+    ],
+    "eslint.autoFixOnSave": true,
+    "editor.formatOnSave": false,
+    "vetur.validation.template": false,
+    "workbench.iconTheme": "vscode-icons",
+    "eslint.alwaysShowStatus": true,
+    "prettier.eslintIntegration": true,
+    "vetur.format.defaultFormatter.js": "prettier-eslint",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
