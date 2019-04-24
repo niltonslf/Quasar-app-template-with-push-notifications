@@ -1,8 +1,8 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-layout-header>
-      <q-toolbar color="primary" :glossy="$q.theme === 'mat'" :inverted="$q.theme === 'ios'">
-        <q-btn flat dense round @click="leftDrawerOpen = !leftDrawerOpen" aria-label="Menu">
+      <q-toolbar color="primary">
+        <q-btn flat dense round @click="toggleDrawer" aria-label="Menu">
           <q-icon name="menu"/>
         </q-btn>
 
@@ -12,20 +12,8 @@
         </q-toolbar-title>
       </q-toolbar>
     </q-layout-header>
-
-    <q-layout-drawer
-      v-model="leftDrawerOpen"
-      :content-class="$q.theme === 'mat' ? 'bg-grey-2' : null"
-    >
-      <q-list no-border link inset-delimiter>
-        <q-list-header>Essential Links</q-list-header>
-        <q-item v-for="(item, index) in drawerItems" :key="index" :to="item.destination">
-          <q-item-side :icon="item.icon"/>
-          <q-item-main :label="item.label" :sublabel="item.sublabel"/>
-        </q-item>
-      </q-list>
-    </q-layout-drawer>
-
+    <!-- DRAWER -->
+    <Drawer />
     <q-page-container>
       <router-view/>
     </q-page-container>
@@ -34,24 +22,20 @@
 
 <script>
 import { openURL } from 'quasar'
-
+import Drawer from '../components/Drawer/Drawer'
 export default {
-  name: 'MyLayout',
+  name: 'Layout',
+  components: { Drawer },
   data () {
     return {
-      leftDrawerOpen: this.$q.platform.is.desktop,
-      drawerItems: [
-        {
-          label: 'Menu item',
-          sublabel: ' sublabel',
-          destination: 'home',
-          icon: 'home'
-        }
-      ]
+
     }
   },
   methods: {
-    openURL
+    openURL,
+    toggleDrawer () {
+      this.$store.commit('Drawer/toggleStatus')
+    }
   }
 }
 </script>
