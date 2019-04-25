@@ -7,8 +7,8 @@
         </q-btn>
 
         <q-toolbar-title>
-          App title
-          <div slot="subtitle">Subtitle</div>
+          {{this.$route.meta.title}}
+          <div slot="subtitle">{{this.$route.meta.subtitle}}</div>
         </q-toolbar-title>
       </q-toolbar>
     </q-layout-header>
@@ -23,6 +23,7 @@
 <script>
 import { openURL } from 'quasar'
 import Drawer from '../components/Drawer/Drawer'
+
 export default {
   name: 'Layout',
   components: { Drawer },
