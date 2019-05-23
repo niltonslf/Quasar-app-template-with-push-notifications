@@ -9,7 +9,7 @@
   "scripts": {
     "lint": "eslint --ext .js,.vue src",
     "test": "echo \"No test specified\" && exit 0",
-    "dev:android": "quasar dev -m cordova -T android -t mat",
+    "dev:android": "quasar dev -m cordova -T android -t mat -p 9090 ",
     "dev:web": "quasar dev -t mat",
     "build:android": "quasar build -m cordova -T android -t mat",
     "build:ios": "quasar build -m cordova -T ios -t ios"
