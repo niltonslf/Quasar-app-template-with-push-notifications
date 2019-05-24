@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "147940896936",
+    "firebase_url": "https://app-push-notifications-test.firebaseio.com",
+    "project_id": "app-push-notifications-test",
+    "storage_bucket": "app-push-notifications-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:147940896936:android:229817c2ee153104",
+        "android_client_info": {
+          "package_name": "br.com.niltonlopes.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "147940896936-khqpt1udjnmt7kg6gva0ro2lmpfli94n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8pxMWRREc3XEq1AQsB7eMq9sJwrh4Jt4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "147940896936-khqpt1udjnmt7kg6gva0ro2lmpfli94n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

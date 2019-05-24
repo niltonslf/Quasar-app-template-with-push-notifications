@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "A Quasar Framework app",
   "productName": "Example",
-  "cordovaId": "br.com.niltonlopes",
+  "cordovaId": "br.com.niltonlopes.test",
   "author": "Nilton Lopes",
   "private": true,
   "scripts": {
@@ -15,7 +15,8 @@
     "build:ios": "quasar build -m cordova -T ios -t ios"
   },
   "dependencies": {
-    "axios": "^0.18.0"
+    "axios": "^0.18.0",
+    "vue-router": "^3.0.6"
   },
   "devDependencies": {
     "@vue/eslint-config-standard": "^4.0.0",

@@ -1,7 +1,8 @@
-# Quasar App
+# Quasar App with push notifications
 
-Template base para apps feitos em quasar framework.
+Template básico do quasar já configurado para receber push notifications.
 
+# instalar dependências
 ```
 npm i
 ```
